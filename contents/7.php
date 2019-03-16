@@ -6,7 +6,7 @@
 <body>
 
 <div id="Email">
-			<form id="email_form" action="#" onsubmit="return validateEmailForm()" method="post" enctype="multipart/form-data">	
+			<form id="email_form" action="contents/send_email.php" onsubmit="return validateEmailForm()" method="post" enctype="multipart/form-data">	
 				Saját email cím<br>
 				<input type="text" name="s_email" id="emailcim" value="" />
 				<input type="submit" value="Küldés" name="submit">
