@@ -1,4 +1,13 @@
 <?php
+	if (empty($_SESSION)){
+		session_start([
+			'cookie_lifetime' => 86400,
+			'read_and_close'  => true,
+		]);
+		
+		$_SESSION["valid"] = "false";
+		$_SESSION['username'] = "Nem történt bejelentkezés";
+	}
   if (isset($_GET["pid"]))
 	  $aktualis_oldal = $_GET["pid"];
 	else
@@ -8,6 +17,8 @@
 <html>
 <head>
 <title>Csepel Horgász Egyesület</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
@@ -15,7 +26,8 @@
 		<ul>
 			<li>
 				<img src="images/tagegy.jpg" height="42" width=auto hspace="0">
-				<img src="images/cimergif.gif" height="42" width=auto hspace="20">				
+				<img src="images/cimergif.gif" height="42" width=auto hspace="20">	
+				Aktuális felhasználó: <?php echo $_SESSION['username']; ?>
 				<div id="search" >					
 					<form method="get" action="#">
 						<div>
@@ -31,7 +43,7 @@
 	</div>
 	
 	<div id="menu">
-		<ul>
+		<ul>			
 			<?php include("menu/upper_menu.php"); ?>
 		</ul>
 	</div>

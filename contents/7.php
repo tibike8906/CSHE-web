@@ -1,19 +1,19 @@
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<script type="text/javascript" src="contents/email_validation.js"></script>
+	<script type="text/javascript" src="contents/log_validation.js"></script>	
 </head>
 <body>
-
-<div id="Email">
-			<form id="email_form" action="contents/send_email.php" onsubmit="return validateEmailForm()" method="post" enctype="multipart/form-data">	
-				Saját email cím<br>
-				<input type="text" name="s_email" id="emailcim" value="" />
-				<input type="submit" value="Küldés" name="submit">
+      <h2>Felhasználónév és Jelszó</h2> 
+	  <div class = "container">
+		<form id="log_form" action="contents/login.php" onsubmit="return validateLogForm()" method="post" enctype="multipart/form-data">	
+				Felhasználó név:<br>
+				<input type="text" name="user_name" id="user_name" value="" /><br>
+				Jelszó:<br>
+				<input type="password" name="user_jelszo" id="user_jelszo" value="" /><br><br>				
+				<input type="submit" value="Bejelentkezés" name="submit">
 			</form>
-			Üzenet<br>
-			<textarea name="s_szoveg" id="szoveg" form="email_form"></textarea>				
-		</div>
-
+		 </div>      	 
 </body>
 </html>

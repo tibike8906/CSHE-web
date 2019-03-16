@@ -11,10 +11,14 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Sikertelen csatlakozás: " . $conn->connect_error);
 } 
-$email=$_REQUEST['s_email'];
-$szoveg=$_REQUEST['s_szoveg'];
+$user_name=$_REQUEST['user_name'];
+$user_veznev=$_REQUEST['user_veznev'];
+$user_kernev=$_REQUEST['user_kernev'];
+$emailcim=$_REQUEST['user_email'];
+$user_jelszo=$_REQUEST['user_jelszo'];
+$jelszo_hash=hash('ripemd160', $user_jelszo);
 
-$sql = "INSERT INTO emails (email, szoveg) VALUES ('$email', '$szoveg')";
+$sql = "INSERT INTO users (user_name, user_veznev, user_kernev, user_email, user_jelszo) VALUES ('$user_name','$user_veznev','$user_kernev','$emailcim','$jelszo_hash')";
 
 if ($conn->query($sql) === TRUE) {
     ?>
@@ -23,13 +27,11 @@ if ($conn->query($sql) === TRUE) {
 		<head>
 		</head>
 		<body>
-			Feladó:<b><?php echo $email;?> </b><br><br>
-			Üzenet:<br>
-			<?php echo $szoveg;?> 			
+			<h1>Sikeres Regisztráció!<h1>			
 		</body>
 		</html>
 	<?php
-	$conn->close();
+	$conn->close();	
 } else {
     echo "Hiba: " . $sql . "<br>" . $conn->error;
 }
