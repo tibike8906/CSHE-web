@@ -1,0 +1,149 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	background: rgb(188, 224, 255);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: rgb(88, 100, 119);
+}
+
+h1, h2, h3 {
+	margin: 10px 0px 10px 0px;
+	padding: 0;
+	font-weight: normal;
+	color: rgb(0, 0, 0);
+}
+
+h1 {
+	font-size: 2em;
+}
+
+#upbar {
+	width: 940px;
+	height: 45px;
+	margin: 0 auto;
+	padding: 0;
+	background: rgb(88, 100, 119);	
+	
+}
+#upbar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+#search {
+	float: right;
+	width: 280px;
+	height: 60px;
+	padding: 5px 0px 0px 0px;
+	background: background: rgb(88, 100, 119);
+		
+}
+
+#search form {
+	height: 41px;
+	margin: 0;
+	padding: 10px 0 0 20px;		
+	color: rgb(255, 255, 255);
+}
+#search h1{
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+	margin: 0 0 4 0;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;	
+}
+
+#search-text {
+	width: 170px;
+	padding: 6px 5px 2px 5px;
+	border: none;
+	background: rgb(255, 255, 255);
+	text-transform: lowercase;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	color: rgb(0, 0, 0);
+}
+
+#search-submit {
+	width: 60px;
+	height: 23px;
+	border: 1px solid rgb(255, 255, 255);
+	background: rgb(167, 191, 229);
+	font-weight: bold;
+	font-size: 12px;
+	color: rgb(255, 255, 255);
+}
+
+
+#menu {
+	width: 940px;
+	height: 36px;
+	margin: 0 auto;
+	padding: 0;
+	background: rgb(88, 100, 119);
+}
+
+#menu ul {
+	margin: 0 0 0 0px;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	height: 26px;
+	margin-bottom: 10px;
+	padding: 10px 20px 0px 20px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	background: rgb(167, 191, 229);
+	text-decoration: none;
+}
+
+#menu .current_page_item a {
+	background: rgb(53, 131, 255);
+	color: #2A1F0B;
+}
+
+
+#page {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#page-bgtop {
+	padding: 20px px;
+}
+
+
+#content {
+	float: left;
+	width: 940px;
+	padding: 10px 0px 10px 10px;
+}
+
+#Kepfeltoletes {
+	margin: 10px 0px 10px 0px;
+}
