@@ -5,7 +5,8 @@
     3 => Array("szoveg" => "Programok", "cim" => "Programok"),
 	4 => Array("szoveg" => "Galéria", "cim" => "Galéria"),
 	5 => Array("szoveg" => "Videók", "cim" => "Videók"),
-	6 => Array("szoveg" => "Bejelentkezés", "cim" => "Bejelentkezés, Regisztráció")
+	6 => Array("szoveg" => "Bejelentkezés", "cim" => "Bejelentkezés, Regisztráció"),
+	7 => Array("szoveg" => "Email", "cim" => "Email küldés az üzemeltetőnek!")
   );
   
   foreach ($upper_menu as $id => $leiro) {

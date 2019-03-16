@@ -20,7 +20,7 @@ h1 {
 }
 
 #upbar {
-	width: 940px;
+	width: 1000px;
 	height: 45px;
 	margin: 0 auto;
 	padding: 0;
@@ -83,7 +83,7 @@ h1 {
 
 
 #menu {
-	width: 940px;
+	width: 1000px;
 	height: 36px;
 	margin: 0 auto;
 	padding: 0;
@@ -128,7 +128,7 @@ h1 {
 
 
 #page {
-	width: 940px;
+	width: 1000px;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -140,10 +140,20 @@ h1 {
 
 #content {
 	float: left;
-	width: 940px;
+	width: 1000px;
 	padding: 10px 0px 10px 10px;
 }
 
 #Kepfeltoletes {
 	margin: 10px 0px 10px 0px;
+}
+#email_form{
+	margin: 0px 0px 5px 0px;
+}
+#emailcim{
+	width: 200px;
+}
+#szoveg{
+	width: 400px;
+	height: 300px;
 }
