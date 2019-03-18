@@ -26,9 +26,19 @@
 	<div id="upbar">	
 		<ul>
 			<li>
+			<div id="logok">
 				<img src="images/tagegy.jpg" height="42" width=auto hspace="0">
-				<img src="images/cimergif.gif" height="42" width=auto hspace="20">					
-				<div id="search" >					
+				<img src="images/cimergif.gif" height="42" width=auto hspace="20">		
+				<b><?php
+					if(isset($_SESSION["valid"])){
+						echo "Bejelentkezett felhasználó: ". $_SESSION['user_fullname']. " " . "(". $_SESSION['username'] .")";
+					} else {
+						echo "";
+					}
+					?>
+				</b>	
+			</div>
+				<div id="search">					
 					<form method="get" action="#">
 						<div>
 							<h1>Keresés az oldalon</h1>
