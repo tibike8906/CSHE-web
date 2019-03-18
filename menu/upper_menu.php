@@ -10,12 +10,16 @@
 	8 => Array("szoveg" => "Kijelentkezés", "cim" => "Kijelentkezés"),
 	9 => Array("szoveg" => "Regisztráció", "cim" => "Regisztráció")
   );
-  
+  if(isset($_SESSION["valid"])){
+	$valid = "true";	  
+  } else {
+	$valid = "false";	
+  }	
   foreach ($upper_menu as $id => $leiro) {
     echo "<li";
     if ($id == $aktualis_oldal)
       echo " class=\"current_page_item\"";
-	if ( $_SESSION["valid"]== "false"){
+	if ( $valid == "false"){
 		if($id == 8){
 			echo " class=\"disabledLink\"";
 			echo "><a title=\"".$leiro["cim"]."\" href=\"#\">".$leiro["szoveg"]."</a></li>\n\t";
@@ -31,4 +35,5 @@
 		}		
 	}
   }
+
 ?>

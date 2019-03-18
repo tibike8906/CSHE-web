@@ -1,14 +1,15 @@
 <?php
-	if (empty($_SESSION)){
-		session_start([
-			'cookie_lifetime' => 86400,
-			'read_and_close'  => true,
-		]);
-		
-		$_SESSION["valid"] = "false";
-		$_SESSION['username'] = "Nem történt bejelentkezés";
-	}
-  if (isset($_GET["pid"]))
+
+	ini_set('session.use_trans_sid', false);		
+	ini_set('session.use_cookies', true);
+	ini_set('session.use_only_cookies', true);
+	$https = false;
+	if(isset($_SERVER['HTTPS']) and $_SERVER['HTTPS'] != 'off') $https = true;
+		$dirname = rtrim(dirname($_SERVER['PHP_SELF']), '/').'/';		
+	session_set_cookie_params(0, $dirname, $_SERVER['HTTP_HOST'], $https, true);
+	session_start();
+
+    if (isset($_GET["pid"]))
 	  $aktualis_oldal = $_GET["pid"];
 	else
 	  $aktualis_oldal = 1;
@@ -26,8 +27,7 @@
 		<ul>
 			<li>
 				<img src="images/tagegy.jpg" height="42" width=auto hspace="0">
-				<img src="images/cimergif.gif" height="42" width=auto hspace="20">	
-				Aktuális felhasználó: <?php echo $_SESSION['username']; ?>
+				<img src="images/cimergif.gif" height="42" width=auto hspace="20">					
 				<div id="search" >					
 					<form method="get" action="#">
 						<div>
