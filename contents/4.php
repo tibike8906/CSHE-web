@@ -1,4 +1,9 @@
-<!doctype html>
+<?php
+	if($_SERVER["REQUEST_METHOD"] == "POST"){
+		include("contents/upload_pic.php"); 
+	}
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
     <head>        
         <link href='photobox/photobox.css' rel='stylesheet' type='text/css'>
@@ -8,7 +13,7 @@
     </head>
     <body>
 		<div id="Kepfeltoletes">
-			<form action="contents/upload_pic.php" method="post" enctype="multipart/form-data">
+			<form action="" method="post" enctype="multipart/form-data">
 				Fájl kiválasztása:
 				<input type="file" name="fileToUpload" id="fileToUpload">
 				<input type="submit" value="Feltöltés" name="submit">

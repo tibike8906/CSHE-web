@@ -1,5 +1,4 @@
 <?php
-
 const IMAGE_HANDLERS = [
     IMAGETYPE_JPEG => [
         'load' => 'imagecreatefromjpeg',
@@ -77,8 +76,8 @@ function createThumbnail($src, $dest, $targetWidth, $targetHeight = null) {
 }
 
 
-$target_dir = "../galeria/";
-$target_index = "../galeria/stamppic/" . basename($_FILES["fileToUpload"]["name"]);
+$target_dir = "galeria/";
+$target_index = "galeria/stamppic/" . basename($_FILES["fileToUpload"]["name"]);
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
