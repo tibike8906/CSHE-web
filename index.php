@@ -39,13 +39,18 @@
 				</b>	
 			</div>
 				<div id="search">					
-					<form method="get" action="#">
-						<div>
-							<h1>Keresés az oldalon</h1>
-							<input type="text" name="s" id="search-text" value="" />
-							<input type="submit" id="search-submit" value="Keresés" />
-						</div>
-					</form>
+					<script>
+						(function() {
+							var cx = '014811244522113895680:z20oz1onqvo';
+							var gcse = document.createElement('script');
+							gcse.type = 'text/javascript';
+							gcse.async = true;
+							gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+							var s = document.getElementsByTagName('script')[0];
+							s.parentNode.insertBefore(gcse, s);
+						})();
+					</script>
+					<gcse:search></gcse:search>
 				</div>
 				<div style="clear: both;">&nbsp;</div>
 			</li>
