@@ -17,9 +17,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
+
 <title>Csepel Horgász Egyesület</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
+<meta name="google-site-verification" content="RQxZBwn9_9cJbqQ_ULYqAAAcSkZhtrzbmfVFJF5AkaE" />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
@@ -36,7 +37,8 @@
 						echo "";
 					}
 					?>
-				</b>	
+				</b><br>
+				<font color="white"> Készítette: JDZ7J1</font>
 			</div>
 				<div id="search">					
 					<script>

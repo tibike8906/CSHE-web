@@ -8,7 +8,7 @@ body {
 	color: rgb(88, 100, 119);
 }
 
-h1, h2, h3 {
+h1, h2, h3{
 	margin: 10px 0px 10px 0px;
 	padding: 0;
 	font-weight: normal;
@@ -18,6 +18,7 @@ h1, h2, h3 {
 h1 {
 	font-size: 2em;
 }
+
 
 #upbar {
 	width: 1280px;
