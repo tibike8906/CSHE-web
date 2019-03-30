@@ -91,12 +91,8 @@ h1 {
 	color: #2A1F0B;
 }
 
-#menu .disabledLink a {
-	background: rgb(252, 15, 15);
-	text-decoration: none;
-	color: currentColor;
-	cursor: not-allowed;
-	opacity: 0.5;
+#menu li.disabledLink {
+	display: none;
 }
 
 
