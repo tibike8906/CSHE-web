@@ -17,7 +17,7 @@
   }	
   foreach ($upper_menu as $id => $leiro) {
 	echo "<li";
-	if ( $valid == "false" && $id == 8){
+	if ( $valid == "false" &&( $id == 8 || $id == 4 )){
 		echo " class=\"disabledLink\"";
 		$leiro["pid"] = "#";
 	}    
